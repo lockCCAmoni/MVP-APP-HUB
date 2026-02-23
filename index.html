@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>App Hub</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #34495e;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    main {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    iframe {
+      width: 90%;
+      height: 80vh;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MVP App Hub</h1>
+  </header>
+
+  <nav>
+    <a onclick="navigate('app1.html')">Pomodoro Timer</a>
+    <a onclick="navigate('app2.html')">Weather App</a>
+  </nav>
+
+  <main>
+    <iframe id="view"></iframe>
+  </main>
+
+  <script>
+    function navigate(page) {
+      document.getElementById("view").src = page;
+    }
+    // Default setting: App1 - Pomodoro Timer
+    navigate("app1.html");
+  </script>
+</body>
+</html>
