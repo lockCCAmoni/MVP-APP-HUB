@@ -1,5 +1,5 @@
 <h1>~~~ Welcome ~~~</h1>
-<p href="https://mvp-app-hub.onrender.com">Here's the link, please click it.</p>
+<a href="https://mvp-app-hub.onrender.com">Here's the link, please click it.</a>
 
 Now, the hub has the following apps:
 <li>App 1 - Pomodoro Timer</li>
